@@ -1,0 +1,467 @@
+body {
+    margin: 0;
+    width: 100%;
+
+}
+
+.heading {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.navbar {
+    transition: background-color 0.3s ease-in-out; /* Add transition for a smooth background color change */
+}
+
+.navbar:hover {
+    background-color: #333; /* Change the background color on hover */
+}
+
+.navbar-brand {
+    color: #000000; /* Set the color of the brand text */
+    font-family: 'Overlock SC', sans-serif;
+    font-weight: bold; /* Make the brand text bold */
+}
+
+.navbar-toggler {
+    border-color: #fff; /* Set the color of the toggler icon */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* Set the color of the toggler icon bars */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 15px; /* Adjust the spacing between nav items */
+}
+
+.nav-link {
+    color: #000000; /* Set the color of the nav links */
+    text-decoration: none; /* Remove underlines from links */
+    transition: color 0.3s ease-in-out; /* Add transition for a smooth color change */
+}
+
+.nav-link:hover {
+    color: #2697e7; /* Change the color on hover */
+    transform: scale(1.2);
+
+}
+
+.loginButton {
+    position: absolute;
+    right: 1%;
+    border-radius: 5%;
+}
+
+.loginButtonText {
+    color: #000000; /* Set the color of the login button text */
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+@media(max-width: 1000px){
+    .loginButton{
+        position: static;
+        /* right:1%;
+        border-radius: 20%; */
+        /* margin: auto; Align to the right */
+        border-radius: 5%;
+        align-items: center;
+        /* margin-top: 10px; Adjust the top margin */
+    }
+}
+
+.loginButtonText:hover {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #2697e7;
+    border-radius: 20%;
+    padding: 5px;
+
+}
+
+
+.homepart{
+    /* position:absolute; */
+    /* margin-top: 10%; */
+    height: 100vh;
+    /* padding: 150px 100px 150px 100px; */
+    padding: 10% 10%;
+    color: #ffffff;
+
+    /* background-color: rgb(195, 240, 240); */
+    background: linear-gradient(to bottom right, #3498db, #2c3e50);
+    /* background-image:url("../images/AiHomeImg.png"); */
+    /* background-size: 100% 100%; Set the width to 100% and height to 200px */
+  /* background-repeat: no-repeat; */
+    width: 100%;
+    /* height: 100%; */
+}
+
+.homepart h1,
+.homepart p{
+    padding-top: 50px;
+    /* color: aliceblue; */
+}
+
+.homeContent{
+    font-family: 'Overlock SC', sans-serif;
+}
+
+.homeContent h1{
+    /* font-family: 'Overlock SC', sans-serif; */
+    font-size: 5rem;
+}
+
+
+/* .homeImg { */
+    /* height: 100%; */
+    /* width: 80%; */
+    /* max-width: 400px; */
+    /* border-radius: 50%; */
+    /* border: 2px solid #fff; Add a border for a cleaner look */
+    /* margin-left: 10px; */
+    /* display: block; */
+    /* object-fit: cover; */
+    /* transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out; Add transition for a smooth effect */
+/* } */
+
+/* .homeImg:hover { */
+    /* transform: scale(1.2); Increase the scale on hover for a zoom effect */
+    /* border-radius: 20%; Change the border-radius on hover for a different shape */
+    /* cursor: pointer; */
+/* } */
+
+
+/* @media (max-width: 800px) {
+    .homeImg {
+        width: 100%;
+        max-width: none;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+}  */
+
+/* .image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+} */
+
+.homeImg {
+    height: 100%;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 50%;
+    border: 2px solid #fff; /* Add a border for a cleaner look */
+    margin-left: 10px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out; /* Add transition for a smooth effect */
+}
+
+.homeImg:hover {
+    transform: scale(1.2); /* Increase the scale on hover for a zoom effect */
+    border-radius: 20%; /* Change the border-radius on hover for a different shape */
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .homeImg {
+        width: 100%;
+        max-width: none;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+}
+
+/* .image-container:hover .homeImg {
+    transform: scale(1.2); Increase the scale on hover for a zoom effect
+    border-radius: 20%; Change the border-radius on hover for a different shape
+    cursor: pointer;
+} */
+
+/* .image-container:hover .hoverImg {
+    opacity: 1;
+} */
+
+/* .image-container:hover .homeImg:not(:hover) {
+    transition-delay: 2s; Delay the transition to reveal the hover image after 2 seconds
+} */
+
+.hoverImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+
+
+
+/* Services Styling Part */
+/* .servicesPart{
+    padding:10% 10%;
+    background-color: white;
+    width: 100%;
+}
+
+.servicesPart h1{
+    padding-bottom: 1%;
+    text-align: center;
+    font-family: 'Overlock SC', sans-serif;
+    font-size: 3rem;
+}
+
+.servicesPart h3{
+    text-align: left;
+    font-family: 'Overlock SC', sans-serif;
+}
+
+.servicesPart p{
+    text-align: left;
+    font-family: 'Farsan', cursive;
+    font-weight: 100;
+} */
+/* Existing ServicesPart Styling */
+.servicesPart {
+    padding: 10% 10%;
+    background-color: white;
+    width: 100%;
+}
+
+.servicesPart h1 {
+    padding-bottom: 1%;
+    text-align: center;
+    font-family: 'Overlock SC', sans-serif;
+    font-size: 3rem;
+}
+
+.servicesPart h3 {
+    text-align: left;
+    font-family: 'Overlock SC', sans-serif;
+}
+
+.servicesPart p {
+    text-align: left;
+    font-family: 'Farsan', cursive;
+    font-weight: 100;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Add some space above the table */
+}
+
+/* Table Header Styling */
+.table th {
+    background-color: #3498db; /* Blue background color for table header */
+    color: #fff; /* White text color for table header */
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table Row Styling */
+.table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; /* Add a light border between rows */
+}
+
+/* Alternate Row Color */
+.table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+/* Hover Effect on Rows */
+.table tr:hover {
+    background-color: #dff0d8; /* Light green background on hover */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+/* About us styling */
+.aboutUsPart{
+    width: 100%;
+}
+.row{
+    width: 100%;
+}
+.aboutUsPart h1{
+    text-align: center;
+    padding: 2%;
+}
+.aboutUsCard{
+    width: 18rem;
+}
+
+.cards{
+    padding-left: 5%;
+    padding-bottom: 5%;
+    /* margin-right:0px; */
+    /* width: 30%; */
+    /* padding-right: 20px; */
+    /* align-items: center; */
+}
+
+
+footer{
+    /* background-color: rgb(64, 95, 250); */
+    background: linear-gradient(to bottom right, #3498db, #2c3e50);
+    color: azure;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 0;
+    height: 15rem;
+    padding: 1%;
+}
+
+form input{
+   height: 10%;
+   width:20%;
+   /* border-radius: 8%;  */
+    padding: 5%;
+}
+
+.footerHeading{
+    padding: 2%;
+}
+.footerLinks{
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+.footerText a{
+    display: block;
+    /* text-decoration: none; */
+    color: white;
+}
+.mutedtextFooter{
+    color: rgb(173, 173, 173);
+}
+
+.subscribeButton{
+    background-color: white;
+}
+.subscribeButton:hover{
+    background-color: rgb(59, 181, 2);
+    color: white;
+}
+
+.address{
+    padding-top: 5%;
+    line-height: 5px;
+}
+
+/* ContactUs.css */
+
+.contactUs {
+    padding: 5%;
+    background: linear-gradient(to right, #6dc3e1, #a0d6b4);
+
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contactUs h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+  
+  form textarea {
+    height: 150px;
+  }
+  
+  form button {
+    background-color: #ffffff;
+    color: #3498db;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  form button:hover {
+    background-color: #2c3e50;
+    color: #ffffff;
+  }
+  
+
+
+/* Particles background */
+/* ---- reset ---- */ 
+/* canvas{  */
+    /* display: block;  */
+    /* vertical-align: bottom;  */
+/* }  */
+/* ---- particles.js container ---- */ 
+/* #particles-js{  */
+    /* position:absolute;  */
+    /* width: 100%;  */
+    /* height: 100%;  */
+    /* background: linear-gradient(to right, #6c6aef, #1313135b); */
+    /* background-color: hsl(0, 79%, 62%);  */
+    /* background-image: url("");  */
+    /* background-repeat: no-repeat;  */
+    /* background-size: cover;  */
+    /* background-position: 50% 50%;  */
+    /* z-index: -1; */
+/* }  */
+/* ---- stats.js ---- */ 
+/* .count-particles{  */
+    /* position: absolute;  */
+    /* top: 48px; left: 0;  */
+    /* width: 80px; */
+    /* color: #13E8E9; */
+    /* font-size: .8em;  */
+    /* text-align: left;  */
+    /* text-indent: 4px;  */
+    /* line-height: 14px;  */
+    /* padding-bottom: 2px;  */
+    /* font-family: Helvetica, Arial, sans-serif;  */
+    /* font-weight: bold; */
+/* }  */
+    
+/* .js-count-particles{  */
+    /* font-size: 1.1em;  */
+/* }  */
+/* #stats, .count-particles{  */
+    /* -webkit-user-select: none;  */
+    /* margin-top: 5px;  */
+    /* margin-left: 5px;  */
+/* }  */
+/* #stats{  */
+    /* border-radius: 3px 3px 0 0;  */
+    /* overflow: hidden;  */
+/* }  */
+/* .count-particles{  */
+    /* border-radius: 0 0 3px 3px;  */
+/* } */
