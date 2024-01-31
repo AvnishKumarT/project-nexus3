@@ -1,6 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "techy",
+"name": "techy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -49,8 +48,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server/server.js",
   "author": "",
-  "license": "ISC"
-=======
+  "license": "ISC",
   "name": "server",
   "version": "1.0.0",
   "description": "",
@@ -67,5 +65,4 @@
     "express": "^4.18.2",
     "mongoose": "^8.1.1"
   }
->>>>>>> d48267d (Commit message)
 }
